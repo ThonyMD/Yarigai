@@ -1,0 +1,157 @@
+/* STYLES GUIDE
+    0. RESET
+    1. LAYOUT
+    2. NAVIGATION
+    3. HEADER
+    4. ESCRITURA
+    5. SERVICES
+    6. YOUTUBE
+    7. CURSOS
+    8. FOOTER LINKS
+    9. FOOTER
+
+    Colors: 
+        #2f3640
+        #212529
+        #
+    
+    FONTS:
+    'Oswald'
+    'Open Sans'
+    'Sans Serif
+*/
+
+/* 0. RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. LAYOUT */
+body { text-align: center; font: 20px sans-serif}
+.content { 
+    display: flex; justify-content: center; align-items: center;
+    padding: 40px 0;}
+ul { list-style: none;}
+.title { font-size: 60px; font-family: 'Oswald';}
+
+/* 2. NAVIGATION */
+.nav-main { display: flex; justify-content: space-between; align-items: center; background: #212529; height: 30px; padding: 20px 0;}
+.nav-brand { width: 50px; height: 50px; margin-left: 50px;}
+.nav-main ul {display: flex;}
+.nav-main ul li { padding: 10px 20px;}
+.nav-main ul a {padding: 2px 10px; text-decoration: none; color: rgb(255, 255, 255); font: 300 20px 'Oswald', sans-serif; text-transform: uppercase;}
+.nav-main ul a:hover { border-bottom: 2px solid white;}
+.nav-main ul.nav-menu {flex: 1; margin-left: 40px;}
+
+/* 3. HEADER */
+header { background: url(img/fondo.png) no-repeat center top; background-size: cover; height: 640px;}
+.header-text { width: 1280px; margin: auto; text-align: left; color: white;}
+.header-text h1 { font: bold 60px sans-serif; text-transform: uppercase; margin: 50px 0; }
+.header-text p { width: 800px; font: 20px sans-serif; }
+
+/* 4. ESCRITURA */
+.japanese { width: 200px; height: 200px;}
+.escritura { display: flex; justify-content: center; align-items: center; height: 350px;}
+.list-japanese { display: flex; justify-content: center; align-items: center;}
+.list-japanese li { margin: 0 80px;}
+.list-japanese figcaption { text-transform: uppercase; font-family: 'Oswald'; letter-spacing: 3px;}
+
+/* 5. SERVICES */
+.services-main { margin: 90px 0;}
+.services-main h2 { margin: 80px 0; font: 50px 'Oswald';}
+.services { display: grid; grid-template-columns: repeat(2, 1fr); text-align: left; width: 80%; margin: 0 auto; gap: 100px;}
+.services div {  border-bottom: 2px dashed rgb(255, 0, 0);}
+.services div p { margin-bottom: 60px;}
+.services img {width: 100px;}
+.services div h3 { margin: 20px 0; font: 30px 'Oswald'; text-transform: uppercase;}
+
+/* 6. YOUTUBE */
+.youtube { height: 450px; background: #212529; color: white;}
+.youtube-content { display: grid; grid-template-columns: 1fr 1fr; width: 1280px;}
+.youtube-content h2 { margin-bottom: 60px;}
+.youtube-text { text-align: left;}
+.youtube-video img { width: 384px; height: 256px;}
+
+/* 7. CURSOS */
+.curso-img {width: 384px; height: 256px;}
+
+.cursos { display: block; justify-content: center; align-items: center; height: 700px; padding: 20px 0;}
+.cursos-list { display: flex; justify-content: center; align-items: center;}
+.cursos-list li { margin: 0 40px;}
+.cursos-list figcaption { margin: 30px 0; text-transform: uppercase; font-family: 'Oswald'; letter-spacing: 3px;}
+
+.cursos h2 { margin-bottom: 100px; margin-top: 50px;}
+
+/* 8. FOOTER LINKS */
+.footer-links {  background: #2f3640;  }
+.footer-links-text {
+    display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; align-items: center; gap: 40px;
+    color: white; text-align: left; 
+    height: 550px; width: 80%; margin: auto; }
+
+.footer-links h2 { font: 30px 'Oswald'; margin-bottom: 50px;}
+.footer-links h3 { font: 20px 'Oswald'; margin-bottom: 7px;}
+
+.footer-links .yarigai p { width: 300px; font-size: 15px; margin-bottom: 30px;}
+.footer-links .yarigai a { text-decoration: none; color: white; margin: 0 5px;}
+.footer-links .yarigai a:hover { opacity: .7;}
+
+.footer-links .contacto p { font-size: 17px; margin-bottom: 20px; }
+
+.footer-links .aspectos-legales li a { 
+    font-size: 17px; color: white;
+    text-decoration: none;}
+.footer-links .aspectos-legales li { margin-bottom: 53px;}
+.footer-links .aspectos-legales a:hover { opacity: .7;}
+
+
+/* 9. FOOTER */
+footer {
+    display: flex; justify-content: center; align-items: center; 
+    height: 100px; background: #212529; color: white; font-size: 17px;}
